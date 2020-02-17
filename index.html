@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK REL="SHORTCUT ICON" HREF="assets/img/pngtree-vector-parking-icon-png-image_4257231.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>AutoPark</title>
+</head>
+<body onload="mostraPatio()">
+    <div class="container">
+        <div class="header clearfix">
+            <h2>Cadastro de Veículos</h2>
+            <br>
+            <div class="jumbotron">
+                <form id="formulario">
+                    <div class="form-group">
+                            <label>Nome do Cliente:</label>
+                            <input type="text" id="nomeCliente" name="nomeCliente" placeholder="Lucas" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Nome do Veículo:</label>
+                            <input type="text" id="nomeCarro" name="nomeCarro" placeholder="Captiva" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Marca do Veículo:</label>
+                            <input type="text" id="marcaCarro" name="marcaCarro" placeholder="Chevrolet" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Modelo do Veículo:</label>
+                        <input type="text" id="modeloCarro" name="modeloCarro" placeholder="SUV" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Placa do Veículo:</label>
+                            <input type="text" onkeyup="validarPlaca(this)" placeholder="ABC-1234" maxlength="8" id="placaCarro" name="placaCarro" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <table class ="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nome Cliente</th>
+                            <th>Carro</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Placa</th>
+                            <th>Entrada</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultado"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</html>
